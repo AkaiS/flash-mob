@@ -1,5 +1,7 @@
 var Sequelize = require('sequelize');
-var sequelize = new Sequelize('flashMob', 'root', 'hr47');
+var sequelize = new Sequelize('flashMob', 'root', 'hr47', {
+  timezone: '+07:00'
+});
 
 // model definition for Users
 var User = sequelize.define('User', {
